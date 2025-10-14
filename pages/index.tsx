@@ -24,6 +24,10 @@ const HomePage: React.FC = () => {
       <Head>
         <title>{personalInfo.name} - 个人主页</title>
         <meta name="description" content={`Academic personal homepage for ${personalInfo.name}`} />
+        <meta name="keywords" content="马天跃, 学术主页, 博士生, 测绘科学, 遥感, 地理信息" />
+        <meta name="author" content="马天跃" />
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
