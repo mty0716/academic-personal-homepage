@@ -36,7 +36,7 @@ const FoldableList = <T,>({
         <div className="mt-6 text-center">
           <button
             onClick={() => setIsExpanded(!isExpanded)}
-            className="px-4 py-2 text-sm font-semibold text-sky-700 bg-sky-50 rounded-md hover:bg-sky-100 transition-colors focus:outline-none focus:ring-2 focus:ring-sky-500"
+            className="px-6 py-3 text-base font-semibold text-sky-700 bg-sky-50 rounded-md hover:bg-sky-100 transition-colors focus:outline-none focus:ring-2 focus:ring-sky-500"
             aria-expanded={isExpanded}
           >
             {isExpanded ? buttonTexts.showLess : `${buttonTexts.showMore} (${items.length - initiallyVisible})`}

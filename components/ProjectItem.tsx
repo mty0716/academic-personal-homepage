@@ -19,24 +19,24 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project, language }) => {
 
   return (
     <article className="text-lg leading-relaxed">
-      <h3 className="font-semibold text-slate-900 flex items-baseline flex-wrap">
+      <h3 className="text-xl font-semibold text-slate-900 flex items-baseline flex-wrap">
         <span>{displayTitle}</span>
         {hasTranslation && (
-            <span className="inline-flex items-center gap-1.5 text-xs text-slate-500 ml-2 font-normal">
-                <Icon type="translate" className="w-3.5 h-3.5" />
+            <span className="inline-flex items-center gap-1.5 text-sm text-slate-500 ml-2 font-normal">
+                <Icon type="translate" className="w-4 h-4" />
                 <span>Translation</span>
             </span>
         )}
       </h3>
-      <div className="text-md text-slate-600 mt-2 flex flex-wrap gap-x-4">
+      <div className="text-lg text-slate-600 mt-2 flex flex-wrap gap-x-4">
         <span>{displayRole}</span>
         <span className="text-slate-400">|</span>
         <span className="font-mono">{period}</span>
       </div>
-      <p className="text-md text-slate-500 italic mt-1">{displayFundingSource}</p>
+      <p className="text-lg text-slate-500 italic mt-2">{displayFundingSource}</p>
       
       {displayDescription && displayDescription.length > 0 && (
-        <ul className="mt-2 list-disc list-inside text-base text-slate-700 space-y-1">
+        <ul className="mt-3 list-disc list-inside text-lg text-slate-700 space-y-2">
           {displayDescription.map((item, index) => (
             <li key={index}>{item}</li>
           ))}

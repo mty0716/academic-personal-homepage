@@ -27,19 +27,19 @@ const PublicationItem: React.FC<PublicationItemProps> = ({ publication, highligh
 
   return (
     <article className="text-lg leading-relaxed">
-      <h3 className="font-semibold text-slate-900 flex items-baseline flex-wrap">
+      <h3 className="text-xl font-semibold text-slate-900 flex items-baseline flex-wrap">
         <span>
           {displayTitle}
           {identifier && <span className="text-slate-500 font-normal ml-2">{identifier}</span>}
         </span>
         {hasTranslation && (
-            <span className="inline-flex items-center gap-1.5 text-xs text-slate-500 ml-2 font-normal">
-                <Icon type="translate" className="w-3.5 h-3.5" />
+            <span className="inline-flex items-center gap-1.5 text-sm text-slate-500 ml-2 font-normal">
+                <Icon type="translate" className="w-4 h-4" />
                 <span>Translation</span>
             </span>
         )}
       </h3>
-      <p className="text-md text-slate-600 mt-1">
+      <p className="text-lg text-slate-600 mt-2">
         {displayAuthors.map((author, index) => (
           <span key={index}>
             {highlightNames.includes(author.trim()) ? (
@@ -51,16 +51,16 @@ const PublicationItem: React.FC<PublicationItemProps> = ({ publication, highligh
           </span>
         ))}
       </p>
-      <p className="text-md text-slate-500 italic mt-1">
+      <p className="text-lg text-slate-500 italic mt-2">
         {displayVenue}, {year}.
       </p>
       {metrics && metrics[language] && (
-        <p className="text-md text-sky-600 font-medium mt-1">
+        <p className="text-lg text-sky-600 font-medium mt-2">
           {metrics[language]}
         </p>
       )}
       {links && (
-        <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm font-medium">
+        <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-base font-medium">
           {links.pdf && <a href={links.pdf} target="_blank" rel="noopener noreferrer" className="text-sky-600 hover:text-sky-800 hover:underline transition-colors">[PDF]</a>}
           {links.doi && <a href={links.doi} target="_blank" rel="noopener noreferrer" className="text-sky-600 hover:text-sky-800 hover:underline transition-colors">[DOI]</a>}
           {links.code && <a href={links.code} target="_blank" rel="noopener noreferrer" className="text-sky-600 hover:text-sky-800 hover:underline transition-colors">[Code]</a>}

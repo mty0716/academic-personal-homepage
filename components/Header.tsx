@@ -42,18 +42,18 @@ const Header: React.FC<HeaderProps> = ({ info, language, setLanguage }) => {
         <Image 
           src={info.imageUrl} 
           alt={info.name} 
-          width={144}
-          height={144}
-          className="rounded-full object-cover shadow-lg border-4 border-white"
+          width={120}
+          height={120}
+          className="rounded-full object-cover shadow-lg border-2 border-white"
           priority
         />
       </div>
       <div className="text-center md:text-left">
-        <h1 className="text-4xl font-bold text-slate-900">{info.name}</h1>
-        <h2 className="text-xl text-sky-700 font-medium mt-1">{info.title}</h2>
-        <p className="text-lg text-slate-600 mt-2">{info.affiliation}</p>
+        <h1 className="text-3xl sm:text-4xl font-bold text-slate-900">{info.name}</h1>
+        <h2 className="text-lg sm:text-xl text-sky-700 font-medium mt-1">{info.title}</h2>
+        <p className="text-base sm:text-lg text-slate-600 mt-2">{info.affiliation}</p>
         
-        <div className="mt-4 flex flex-wrap justify-center md:justify-start items-center gap-x-4 gap-y-2 text-slate-500">
+        <div className="mt-4 flex flex-wrap justify-center md:justify-start items-center gap-x-4 gap-y-2 text-sm text-slate-500">
             <a href={`mailto:${info.email}`} className="flex items-center space-x-1.5 hover:text-sky-600 transition-colors">
                 <Icon type="email" />
                 <span>Email</span>
