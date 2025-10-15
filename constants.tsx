@@ -15,7 +15,7 @@ export const CONTENT = {
           github: "https://github.com/",
           twitter: "https://twitter.com/",
       },
-      imageUrl: "/profile.jpg"
+      imageUrl: process.env.NODE_ENV === 'production' ? '/academic-personal-homepage/profile.jpg' : '/profile.jpg'
     },
     aboutMe: {
         title: "About Me",
@@ -131,7 +131,7 @@ export const CONTENT = {
           github: "https://github.com/",
           twitter: "https://twitter.com/",
       },
-      imageUrl: "/profile.jpg"
+      imageUrl: process.env.NODE_ENV === 'production' ? '/academic-personal-homepage/profile.jpg' : '/profile.jpg'
     },
     aboutMe: {
         title: "关于我",
