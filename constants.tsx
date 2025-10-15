@@ -10,10 +10,9 @@ export const CONTENT = {
       affiliation: "China University of Mining and Technology (Beijing)",
       email: "tianyue.ma@example.com",
       links: {
-          googleScholar: "https://scholar.google.com/",
-          linkedIn: "https://www.linkedin.com/",
-          github: "https://github.com/",
-          twitter: "https://twitter.com/",
+          googleScholar: "https://scholar.google.com/citations?user=FRgpPVMAAAAJ&hl",
+          linkedIn: "https://www.linkedin.com/in/mty0716",
+          github: "https://github.com/mty0716",
       },
       imageUrl: process.env.GITHUB_PAGES === 'true' ? '/academic-personal-homepage/profile.jpg' : '/profile.jpg'
     },
@@ -126,10 +125,9 @@ export const CONTENT = {
       affiliation: "中国矿业大学（北京）",
       email: "tianyue.ma@example.com",
       links: {
-          googleScholar: "https://scholar.google.com/",
-          linkedIn: "https://www.linkedin.com/",
-          github: "https://github.com/",
-          twitter: "https://twitter.com/",
+          googleScholar: "https://scholar.google.com/citations?user=FRgpPVMAAAAJ&hl",
+          linkedIn: "https://www.linkedin.com/in/mty0716",
+          github: "https://github.com/mty0716",
       },
       imageUrl: process.env.GITHUB_PAGES === 'true' ? '/academic-personal-homepage/profile.jpg' : '/profile.jpg'
     },

@@ -76,12 +76,6 @@ const Header: React.FC<HeaderProps> = ({ info, language, setLanguage }) => {
                     <span>GitHub</span>
                 </a>
             )}
-             {info.links.twitter && (
-                <a href={info.links.twitter} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-1.5 hover:text-sky-600 transition-colors">
-                    <Icon type="twitter" />
-                    <span>Twitter</span>
-                </a>
-            )}
         </div>
       </div>
     </header>
